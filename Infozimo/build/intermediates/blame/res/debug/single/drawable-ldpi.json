@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/build/intermediates/res/merged/debug/drawable-ldpi/ic_post.png",
+        "source": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/src/main/res/drawable-ldpi/ic_post.png"
+    },
+    {
+        "merged": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/build/intermediates/res/merged/debug/drawable-ldpi/ic_home.png",
+        "source": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/src/main/res/drawable-ldpi/ic_home.png"
+    },
+    {
+        "merged": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/build/intermediates/res/merged/debug/drawable-ldpi/ic_infozimo.png",
+        "source": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/src/main/res/drawable-ldpi/ic_infozimo.png"
+    },
+    {
+        "merged": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/build/intermediates/res/merged/debug/drawable-ldpi/ic_launcher.png",
+        "source": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/src/main/res/drawable-ldpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/build/intermediates/res/merged/debug/drawable-ldpi/ic_tag.png",
+        "source": "/Users/Rajesh/Workspace/aStudio_Workspace/Infozimo/src/main/res/drawable-ldpi/ic_tag.png"
+    }
+]
