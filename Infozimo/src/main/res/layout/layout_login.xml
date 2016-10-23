@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FF6600" >
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FF6600" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tvInfozimo"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:layout_margin="@dimen/activity_vertical_margin"
+				android:gravity="center"
+				android:textColor="@android:color/white"
+				android:textStyle="bold"
+				android:textSize="36sp"/>
+
+			<LinearLayout
+				android:id="@+id/layoutLogin"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tvInfozimo"
+				android:orientation="vertical"
+				android:visibility="visible">
+
+				<EditText
+					android:id="@+id/etUserId"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="User ID"
+					android:textColorHint="@android:color/white"
+					android:inputType="textEmailAddress"
+					android:layout_margin="@dimen/activity_vertical_margin"
+					android:textColor="@android:color/white"/>
+
+				<EditText
+					android:id="@+id/etPwd"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Password"
+					android:textColorHint="@android:color/white"
+					android:inputType="textPassword"
+					android:layout_margin="@dimen/activity_vertical_margin"
+					android:textColor="@android:color/white"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/layoutRegister"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/tvInfozimo"
+				android:orientation="vertical"
+				android:visibility="gone">
+
+				<ImageView
+					android:id="@+id/ivProfilePic"
+					android:layout_width="128dp"
+					android:layout_height="128dp"
+					android:layout_gravity="center_horizontal"
+					android:background="@drawable/default_pic" />
+
+				<EditText
+					android:id="@+id/etEmailId"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Email ID"
+					android:textColorHint="@android:color/white"
+					android:inputType="textEmailAddress"
+					android:layout_margin="@dimen/activity_vertical_margin"
+					android:textColor="@android:color/white"/>
+
+				<EditText
+					android:id="@+id/etUserName"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Name"
+					android:textColorHint="@android:color/white"
+					android:layout_margin="@dimen/activity_vertical_margin"
+					android:textColor="@android:color/white"/>
+
+				<RadioGroup
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_margin="@dimen/activity_vertical_margin">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="Gender"
+						android:textSize="16sp"
+						android:textColor="@android:color/white"
+						android:layout_margin="@dimen/activity_vertical_margin"/>
+
+					<RadioButton
+						android:id="@+id/radioFemale"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Female"
+						android:checked="true"
+						android:layout_weight="1"
+						android:textColor="@android:color/white"
+						android:layout_margin="@dimen/activity_vertical_margin"/>
+
+					<RadioButton
+						android:id="@+id/radioMale"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="Male"
+						android:layout_weight="1"
+						android:textColor="@android:color/white"
+						android:layout_margin="@dimen/activity_vertical_margin"/>
+
+				</RadioGroup>
+
+				<EditText
+					android:id="@+id/etDob"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Date of Birth"
+					android:textColorHint="@android:color/white"
+					android:inputType="date"
+					android:layout_margin="@dimen/activity_vertical_margin"
+					android:textColor="@android:color/white"/>
+
+				<EditText
+					android:id="@+id/etMobile"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="phone"
+					android:hint="Mobile"
+					android:textColorHint="@android:color/white"
+					android:layout_margin="@dimen/activity_vertical_margin"
+					android:textColor="@android:color/white"/>
+
+				<EditText
+					android:id="@+id/etNewPwd"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Password"
+					android:textColorHint="@android:color/white"
+					android:inputType="textPassword"
+					android:layout_margin="@dimen/activity_vertical_margin"
+					android:textColor="@android:color/white"/>
+
+				<EditText
+					android:id="@+id/etConfirmPwd"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="Confirm Password"
+					android:textColorHint="@android:color/white"
+					android:inputType="textPassword"
+					android:layout_margin="@dimen/activity_vertical_margin"
+					android:textColor="@android:color/white"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/registerButton"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_above="@+id/pwdResetButton"
+				android:text="Not Member Yet? Click Here to Register!"
+				android:textSize="16sp"
+				android:gravity="center"
+				android:textColor="@android:color/darker_gray"/>
+
+			<TextView
+				android:id="@+id/pwdResetButton"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_above="@+id/loginButton"
+				android:text="Forgot Password?"
+				android:textSize="16sp"
+				android:gravity="center"
+				android:textColor="@android:color/darker_gray"/>
+
+			<Button
+				android:id="@+id/loginButton"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Login"
+				android:textColor="@android:color/darker_gray"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:layout_margin="30dp" />
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</RelativeLayout>
+

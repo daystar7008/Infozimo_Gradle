@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tvPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24dp"/>
+    
+    <TextView 
+        android:id="@+id/tvContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvPoints"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16dp"
+        android:text="Please Enter Your PayTM Registered Contact to Add Cash"
+        android:visibility="gone"/>
+    
+    <EditText 
+        android:id="@+id/etContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvContact"
+        android:visibility="gone"/>
+    
+    <Button 
+        android:id="@+id/btnRedeem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Redeem"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/etContact"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/drawable_tag_item"/>
+
+</RelativeLayout>

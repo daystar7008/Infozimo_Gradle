@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/layoutUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small"
+        android:layout_alignParentTop="true">
+        
+        <ImageView 
+	        android:id="@+id/ivUserPic"
+	        android:layout_width="64dp"
+	        android:layout_height="64dp"
+	        android:contentDescription="@string/user_pic"
+        	android:padding="@dimen/padding_small"/>
+	    
+	    <TextView 
+	        android:id="@+id/tvUser"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="4"
+	        android:layout_gravity="center_vertical"
+	        android:textColor="@color/infozimo_orange"
+	        android:textStyle="bold"
+        	android:padding="@dimen/padding_small"/>
+	    
+	    <ImageView 
+	        android:id="@+id/ivDeletePost"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_gravity="center"
+	        android:src="@android:drawable/ic_delete"
+	        android:contentDescription="@string/user_pic"
+        	android:padding="@dimen/padding_small"
+        	android:visibility="gone"/>
+        
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/infoLine1" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line2"
+        android:layout_below="@+id/layoutUserInfo"/>
+    
+    <TextView 
+        android:id="@+id/tvInfoDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/infoLine1"
+        android:padding="@dimen/padding_small"/>
+    
+    <LinearLayout 
+        android:id="@+id/layoutImageInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small"
+	    android:layout_below="@+id/tvInfoDetail"
+	    android:visibility="gone">
+        <ImageView 
+	        android:id="@+id/ivInfoImage"
+	        android:layout_width="512dp"
+	        android:layout_height="256dp"
+			android:layout_gravity="center"
+        	android:padding="@dimen/padding_small"
+			android:scaleType="fitXY"
+			android:gravity="center"
+	        android:contentDescription="@string/info_pic"/>
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/infoLine2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/line2"
+        android:layout_below="@+id/layoutImageInfo"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small"
+        android:layout_below="@+id/infoLine2">
+        
+        <Button 
+            android:id="@+id/ibShareInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        	android:padding="@dimen/padding_small"
+            android:drawableTop="@drawable/share"
+            android:text="@string/share"
+        	android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:contentDescription="@string/shareInfo"
+            android:background="@android:color/transparent"/>
+        
+        <Button 
+            android:id="@+id/ibLikeInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        	android:padding="@dimen/padding_small"
+        	android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/ic_like"
+            android:contentDescription="@string/likeInfo"
+            android:background="@android:color/transparent"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="infozimo_orange">#FF6600</color>
+    <color name="infozimo_bg">#F0EEEE</color>
+    <color name="blue_btn">#88B8DE</color>
+    
+</resources>
